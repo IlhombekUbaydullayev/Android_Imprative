@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Android_imprative</string>
+    <string name="str_back">Back</string>
 </resources>

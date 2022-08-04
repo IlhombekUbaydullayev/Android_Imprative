@@ -2,16 +2,16 @@ package com.example.android_imprative.model
 
 import android.telecom.Call
 
-data class TVShowDetails(
-    val tvShow: Details
-)
+class TVShowDetails {
+    val tvShow: Details? = null
+}
 
-data class Details(
+data class Details (
     val id: Long,
     val name: String,
     val permalink: String,
     val url: String,
-    val descriptions: String,
+    val description: String,
     val descriptionSource: String,
     val startDate: String,
     val endDate: Any? = null,
@@ -27,11 +27,12 @@ data class Details(
     val countdown: Any? = null,
     val genres: List<String>,
     val pictures: List<String>,
-    val episodes: List<String>,
+    val episodes: List<Episode>
 )
-data class Episode(
+
+data class Episode (
     val season: Long,
     val episode: Long,
     val name: String,
-    val airDate: String
+    val air_date: String
 )
